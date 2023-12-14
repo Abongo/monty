@@ -66,9 +66,15 @@ void get_rotl(stack_t **stack, unsigned int line_number);
 void get_pchar(stack_t **stack, unsigned int line_number);
 void get_rotr(stack_t **stack, unsigned int line_number);
 void get_pstr(stack_t **stack, unsigned int line_number);
+void push(stack_t **stack, int value);
 
 void get_free(stack_t *stack);
-int _isdigit(char *str);
-
+int main(int argc, char *argv[]);
+void execute_monty(void);
+int is_numeric(char *str);
+void push(stack_t **stack, int n);
+void parse_line(char *line, stack_t **stack __attribute__((unused)),
+		unsigned int line_number);
+void print_stack(stack_t *stack);
 
 #endif /* MONTY_H */
