@@ -10,7 +10,7 @@ typedef struct
     int top;
 } Stack;
 
-void push(Stack *stack, int value)
+void push(stack_t *stack, int value)
 {
     if (stack->top == STACK_SIZE - 1)
     {
