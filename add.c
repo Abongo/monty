@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * fetch_add - function that adds the top two elements of the stack
+ * get_add - function that adds the top two elements of the stack
  * @stack: pointer to the top of the stack
  * @line_number: where the line number appears
  * Description: 4. add
@@ -9,7 +9,7 @@
  * 1. upon success, nothing
  * 2. upon fail, EXIT_FAILURE
  */
-void fetch_add(stack_t **stack, unsigned int line_number)
+void get_add(stack_t **stack, unsigned int line_number)
 {
 	stack_t *first, *second;
 

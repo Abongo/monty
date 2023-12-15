@@ -1,7 +1,8 @@
 #include "monty.h"
 
 /**
- * get_mod - Compute the rest of the division of the second top element by the top element
+ * get_mod - Compute the rest of the division of the second top element
+ * by the top element
  * @stack: Double pointer to the head of the stack
  * @line_number: Line number of the opcode in the Monty file
  */
