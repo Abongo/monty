@@ -51,7 +51,7 @@ void (*operator_function)(stack_t **, unsigned int);
 void (*go(char *op_f, unsigned int l, stack_t **s))(stack_t**, unsigned int);
 
 
-void get_push(stack_t **stack, unsigned int line_number, char *temp);
+void get_push(stack_t **stack, unsigned int line_number);
 void get_pall(stack_t **stack, unsigned int line_number);
 void get_pint(stack_t **stack, unsigned int line_number);
 void get_pop(stack_t **stack, unsigned int line_number);
@@ -66,9 +66,10 @@ void get_rotl(stack_t **stack, unsigned int line_number);
 void get_pchar(stack_t **stack, unsigned int line_number);
 void get_rotr(stack_t **stack, unsigned int line_number);
 void get_pstr(stack_t **stack, unsigned int line_number);
-void push(stack_t **stack, int value);
+void push(Stack *stack, int value);
 
-void get_free(stack_t *stack);
-int is_numeric(char *str);
+void free_stack(stack_t *stack);
+int is_digit(char *str);
+int main();
 
 #endif /* MONTY_H */
