@@ -1,6 +1,7 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -67,8 +68,10 @@ void get_pchar(stack_t **stack, unsigned int line_number);
 void get_rotr(stack_t **stack, unsigned int line_number);
 void get_pstr(stack_t **stack, unsigned int line_number);
 void push(stack_t *stack, int value);
+void stack_mode(stack_t **stack, unsigned int line_number);
+void queue_mode(stack_t **stack, unsigned int line_number);
 
-void free_stack(stack_t *stack);
+void get_free(stack_t *stack);
 int is_digit(char *str);
 int main();
 
