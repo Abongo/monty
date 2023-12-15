@@ -17,4 +17,4 @@
 ++ .					putchar t (114 plus 2 = 116)
 ----- .					putchar o (116 minus 5 = 111)
 - .						putchar n (111 minus 1 = 110)
-> .						putchar \n (10)`
+> .						putchar \n (10)
