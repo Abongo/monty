@@ -4,7 +4,7 @@
 
 #define STACK_SIZE 1000
 
-typedef struct 
+typedef struct
 {
     int stack[STACK_SIZE];
     int top;
